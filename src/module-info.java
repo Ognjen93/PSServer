@@ -5,10 +5,9 @@ module PSServer {
     requires java.logging;
     requires java.sql;
 
-    opens controller;
-    opens main;
-    opens mysql;
+    opens authserver;
+    opens util;
     opens model.dto;
-    opens resursi;
-    opens view;
+    opens model.dao;
+    opens server;
 }
