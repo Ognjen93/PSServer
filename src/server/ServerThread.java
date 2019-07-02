@@ -44,6 +44,7 @@ public class ServerThread extends Thread {
             		request = in.readLine();
                 }catch(SocketException en) {
                 	System.out.println("");
+                	return;//Ognjen dodao da ako pukne konekcija da se ne vrti tred stalno,poludi onda
                 }
                 //if(request!=null) {
                 System.out.println("[Klijent " + sock.getInetAddress() + ":" + sock.getPort() + "] " + request);
